@@ -94,14 +94,11 @@ window.addEventListener("load", setAttributePrice);
 
 function setAttributePrice() {
 var fireEmoji= "🔥";
-var products = document.getElementsByClassName("card");
-
-for (var i = 0; i < products.length; i++) {
-   var priceElement = products[i].getElementsByClassName("hot");
-   if(priceElement.length > 0){
-   var price = priceElement[0].innerHTML;
-   priceElement[0].setHTML(price+fireEmoji);
-   }
+const hotProducts = document.querySelectorAll(".price.hot");
+for (var i = 0; i < hotProducts.length; i++) {
+  var price = hotProducts[i].innerHTML;
+  hotProducts[i].setHTML(price+fireEmoji);
+  
 }
 
 }
