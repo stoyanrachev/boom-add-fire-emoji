@@ -1,5 +1,16 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
+  //window.addEventListener("load", setAttributePrice);
+
+//function setAttributePrice() {
+var fireEmoji= "🔥";
+const hotProducts = document.querySelectorAll(".price.hot");
+for (var i = 0; i < hotProducts.length; i++) {
+  var price = hotProducts[i].innerHTML;
+  hotProducts[i].setHTML(price+fireEmoji);
+  
+}
+
+//}
 });
