@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //function setAttributePrice() {
 var fireEmoji= "🔥";
-const hotProducts = document.querySelectorAll(".price.hot");
+const hotProducts = document.querySelectorAll(".hot");
 for (var i = 0; i < hotProducts.length; i++) {
   var price = hotProducts[i].innerHTML;
   hotProducts[i].setHTML(price+fireEmoji);
